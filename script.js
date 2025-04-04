@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Gestione delle schede
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanes = document.querySelectorAll('.tab-pane');
     
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // Rimuovi active da tutti i pulsanti e contenuti
-            tabBtns.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Rimuovi active da tutti i pulsanti e pannelli
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
             
             // Aggiungi active al pulsante cliccato
             this.classList.add('active');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById(tabId).classList.add('active');
         });
     });
-    
+  
     // Gestione del form di contatto
     const contactForm = document.querySelector('.contact-form');
     
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Qui puoi aggiungere la logica per inviare il form
+            // Simulazione invio form
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
@@ -37,14 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
             contactForm.reset();
         });
     }
-    
-    // Animazione per il caricamento della pagina
-    const elements = document.querySelectorAll('.info-card, .about-me, .tab-content');
-    
-    elements.forEach((element, index) => {
-        setTimeout(() => {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }, 100 * index);
-    });
-});
+  });

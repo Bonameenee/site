@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mio Curriculum</title>
+    <title>Davide Bonamini - System Administrator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Intestazione -->
     <header>
-        <h1>Nome Cognome</h1>
-        <p>Professione o specializzazione</p>
+        <div class="header-content">
+            <h1>Davide Bonamini</h1>
+            <p class="subtitle">System Administrator</p>
+        </div>
     </header>
 
     <div class="container">
@@ -20,29 +23,46 @@
             <!-- Sezione contatti -->
             <div class="info-card">
                 <h3>Contatti</h3>
-                <ul>
-                    <li><i class="fas fa-envelope"></i> email@example.com</li>
-                    <li><i class="fas fa-phone"></i> +39 123 456 789</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Città, Italia</li>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="contact-text">davide.bonamini99@gmail.com</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-phone icon"></i>
+                        <span class="contact-text">+39 3475844507</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <span class="contact-text">Caldiero, Verona, Italia</span>
+                    </li>
                 </ul>
             </div>
 
             <!-- Sezione competenze -->
             <div class="info-card">
                 <h3>Competenze</h3>
-                <ul>
-                    <li>Competenza 1</li>
-                    <li>Competenza 2</li>
-                    <li>Competenza 3</li>
+                <ul class="skills-list">
+                    <li class="skill-item">System Administration</li>
+                    <li class="skill-item">Python</li>
+                    <li class="skill-item">3D modeling</li>
+                    <li class="skill-item">Reti informatiche</li>
+                    <li class="skill-item">Cybersecurity</li>
                 </ul>
             </div>
 
             <!-- Sezione lingue -->
             <div class="info-card">
                 <h3>Lingue</h3>
-                <ul>
-                    <li>Italiano: Madrelingua</li>
-                    <li>Inglese: Avanzato</li>
+                <ul class="languages-list">
+                    <li class="language-item">
+                        <span class="language-name">Italiano:</span>
+                        <span class="language-level">Madrelingua</span>
+                    </li>
+                    <li class="language-item">
+                        <span class="language-name">Inglese:</span>
+                        <span class="language-level">Livello B2</span>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -52,83 +72,117 @@
             <!-- About Me -->
             <section class="about-me">
                 <h2>About Me</h2>
-                <p>Breve introduzione su di te, chi sei, cosa fai e quali sono i tuoi obiettivi professionali. Puoi descrivere la tua passione per il tuo lavoro e cosa ti rende unico nel tuo campo.</p>
+                <div class="about-content">
+                    <p>Mi chiamo Davide, ho 25 anni e sono un appassionato di informatica e ingegneria. Ho deciso di intraprendere gli studi informatici dopo aver frequentato per anni l'Università di Ingegneria del Veicolo, non trovando le giuste motivazioni. Ora ho intrapreso la strada dell'ITS, frequentando il corso di System Administrator.</p>
+                    <p>Anche se l'informatica non è stato il mio focus principale, nel tempo libero ho sempre coltivato la passione, soprattutto per ciò che riguarda l'hardware, costruendo PC e mini server, per me e per amici. Negli ultimi tempi ho sviluppato interessi per la cybersicurezza e per l'amministrazione di sistemi.</p>
+                </div>
             </section>
 
             <!-- Menu a schede -->
-            <div class="tabs">
-                <button class="tab-btn active" data-tab="lavoro">Esperienza Lavorativa</button>
-                <button class="tab-btn" data-tab="scuola">Formazione</button>
-                <button class="tab-btn" data-tab="progetti">Progetti</button>
-                <button class="tab-btn" data-tab="contatti">Contatti</button>
-            </div>
+            <div class="tabs-container">
+                <nav class="tabs-navigation">
+                    <button class="tab-button active" data-tab="experience">Esperienza</button>
+                    <button class="tab-button" data-tab="education">Formazione</button>
+                    <button class="tab-button" data-tab="projects">Progetti</button>
+                    <button class="tab-button" data-tab="contact">Contatti</button>
+                </nav>
 
-            <!-- Contenuto schede -->
-            <div class="tab-content active" id="lavoro">
-                <h3>Esperienza Lavorativa</h3>
-                <div class="experience">
-                    <h4>Azienda XYZ - Ruolo</h4>
-                    <p class="date">2020 - Presente</p>
-                    <ul>
-                        <li>Responsabilità e risultati ottenuti</li>
-                        <li>Progetti importanti</li>
-                        <li>Tecnologie utilizzate</li>
-                    </ul>
-                </div>
-                <div class="experience">
-                    <h4>Azienda ABC - Ruolo</h4>
-                    <p class="date">2017 - 2020</p>
-                    <ul>
-                        <li>Responsabilità e risultati ottenuti</li>
-                        <li>Progetti importanti</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tab-content" id="scuola">
-                <h3>Formazione</h3>
-                <div class="education">
-                    <h4>Università degli Studi</h4>
-                    <p class="date">2014 - 2017</p>
-                    <p>Laurea in [Disciplina]</p>
-                    <p>Tesi: "Titolo della tesi"</p>
-                </div>
-                <div class="education">
-                    <h4>Scuola Secondaria</h4>
-                    <p class="date">2009 - 2014</p>
-                    <p>Diploma in [Indirizzo]</p>
-                </div>
-            </div>
-
-            <div class="tab-content" id="progetti">
-                <h3>Progetti</h3>
-                <div class="project">
-                    <h4>Nome Progetto</h4>
-                    <p>Descrizione del progetto, tecnologie utilizzate e risultati ottenuti.</p>
-                </div>
-                <div class="project">
-                    <h4>Altro Progetto</h4>
-                    <p>Descrizione del progetto e ruolo svolto.</p>
-                </div>
-            </div>
-
-            <div class="tab-content" id="contatti">
-                <h3>Contatti</h3>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" required>
+                <!-- Contenuto schede -->
+                <div class="tabs-content">
+                    <!-- Esperienza Lavorativa -->
+                    <div class="tab-pane active" id="experience">
+                        <h3>Esperienza Professionale</h3>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h4 class="job-title">Informatore ambientale</h4>
+                                <span class="company">Cooperativa La Lumaca - Modena</span>
+                                <span class="timeline-date">06/2023 - 06/2024</span>
+                            </div>
+                            <ul class="responsibilities-list">
+                                <li class="responsibility">Operatore allo sportello per informare i clienti HERA sulla raccolta differenziata</li>
+                                <li class="responsibility">Help desk interno per le apparecchiature elettroniche</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h4 class="job-title">Addetto alle vendite</h4>
+                                <span class="company">MaxiDi srl - San Bonifacio, Verona</span>
+                                <span class="timeline-date">09/2021 - 03/2023</span>
+                            </div>
+                            <ul class="responsibilities-list">
+                                <li class="responsibility">Addetto alle vendite supermercati "Famila"</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
+
+                    <!-- Formazione -->
+                    <div class="tab-pane" id="education">
+                        <h3>Percorso Formativo</h3>
+                        
+                        <div class="education-item">
+                            <h4 class="degree">ITS Academy LAST - System Administrator</h4>
+                            <span class="institution">Diploma V livello EQF</span>
+                            <span class="education-date">2024 — IN CORSO</span>
+                            <p class="education-description">Percorso di studi incentrato su gestione di infrastrutture IT, sviluppo Backend e CyberSecurity</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <h4 class="degree">UniMORE - Ingegneria del Veicolo</h4>
+                            <span class="institution">Dipartimento "Enzo Ferrari"</span>
+                            <span class="education-date">2018 - rinuncia</span>
+                            <p class="education-description">Ho studiato all'università di Modena, dipartimento di Ingegneria, scelto come percorso dopo il diploma. Dopo degli anni difficili post-Covid, ho rinunciato per focalizzarmi su un percorso più stimolante.</p>
+                        </div>
+
+                        <div class="education-item">
+                            <h4 class="degree">IISS Copernico - Pasoli</h4>
+                            <span class="institution">Diploma scientifico</span>
+                            <span class="education-date">2013 - 2018</span>
+                            <p class="education-description">Diploma di maturità scientifica, con potenziamento informatico e scientifico. Voto 76/100</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Messaggio</label>
-                        <textarea id="message" required></textarea>
+
+                    <!-- Progetti -->
+                    <div class="tab-pane" id="projects">
+                        <h3>Progetti Personali</h3>
+                        
+                        <div class="project-card">
+                            <h4 class="project-title">DAMMN Project</h4>
+                            <p class="project-description">
+                                DAMMN Project è il progetto a cui ho collaborato per il Project Work del primo anno di ITS.
+                            </p>
+                            <a href="https://andreaguarino12.github.io/DAMMN/" class="project-link">Visita il progetto</a>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h4 class="project-title">Home server</h4>
+                            <p class="project-description">
+                                Configurazione di un home server per ospitare vari servizi, incluso questo portfolio.
+                            </p>
+                        </div>
                     </div>
-                    <button type="submit" class="submit-btn">Invia</button>
-                </form>
+
+                    <!-- Contatti -->
+                    <div class="tab-pane" id="contact">
+                        <h3>Contattami</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Messaggio</label>
+                                <textarea id="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Invia Messaggio</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
