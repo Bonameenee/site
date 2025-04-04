@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Curriculum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi Sono</a></li>
+                <li><a href="#skills">Competenze</a></li>
+                <li><a href="#projects">Progetti</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ciao, sono <span class="highlight">Nome Cognome</span></h1>
+                <h2>Sviluppatore Web Full Stack</h2>
+                <a href="#contact" class="btn">Contattami</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Chi Sono</h2>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="images/profile.jpg" alt="Foto profilo">
+                    </div>
+                    <div class="about-text">
+                        <p>Benvenuto nel mio sito personale! Sono uno sviluppatore web con 5 anni di esperienza nella creazione di siti e applicazioni web moderne e responsive.</p>
+                        <p>Mi specializzo in JavaScript, React e Node.js, ma sono sempre alla ricerca di nuove tecnologie da imparare e mettere in pratica.</p>
+                        <p>Quando non scrivo codice, mi piace contribuire a progetti open source, leggere libri di tecnologia e fare trekking in montagna.</p>
+                        <a href="#" class="btn" id="download-cv">Scarica il mio CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Le Mie Competenze</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill" data-level="90">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                        <div class="skill" data-level="85">
+                            <span>JavaScript</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                        <div class="skill" data-level="80">
+                            <span>React</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill" data-level="75">
+                            <span>Node.js</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                        <div class="skill" data-level="70">
+                            <span>PHP</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                        <div class="skill" data-level="65">
+                            <span>MySQL</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Altro</h3>
+                        <div class="skill" data-level="85">
+                            <span>Git</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                        <div class="skill" data-level="80">
+                            <span>UI/UX Design</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                        <div class="skill" data-level="75">
+                            <span>SEO</span>
+                            <div class="skill-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">I Miei Progetti</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/project1.jpg" alt="Progetto 1">
+                        <div class="project-info">
+                            <h3>E-commerce Platform</h3>
+                            <p>Piattaforma di e-commerce completa con carrello, checkout e sistema di pagamento.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="btn btn-small">Vedi progetto</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="images/project1.jpg" alt="Progetto 2">
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>Applicazione per la gestione dei task con drag & drop, priorità e notifiche.</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                            </div>
+                            <a href="#" class="btn btn-small">Vedi progetto</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="images/project1.jpg" alt="Progetto 3">
+                        <div class="project-info">
+                            <h3>Portfolio Template</h3>
+                            <p>Template responsive per portfolio personale con animazioni CSS.</p>
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="btn btn-small">Vedi progetto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Contattami</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Informazioni di contatto</h3>
+                        <p><i class="fas fa-envelope"></i> email@example.com</p>
+                        <p><i class="fas fa-phone"></i> +39 123 456 7890</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Città, Italia</p>
+                        
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Oggetto">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Messaggio" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Il Mio Curriculum. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
